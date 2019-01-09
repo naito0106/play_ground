@@ -12,10 +12,10 @@ let router = new Router({
       component: Home,
     },
     {
-      path: '/game',
+      path: '/game/:gameId',
       name: 'game',
       component: {
-        template: '<div>Game画面だよ</div>'
+        template: '<div>Game({{ $route.params.gameId }})画面だよ</div>'
       }
     }
     ]

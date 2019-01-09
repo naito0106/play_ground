@@ -26,7 +26,10 @@
     },
     methods: {
       toHome() {
+        this.$store.dispatch('moduleC/example')
         this.$router.push('/')
+        console.log(this.$store.state.moduleC.data.message)
+        console.log(this.$store.getters.greetingC)
       },
       toGame() {
         this.$router.push({ name: 'game', params: { gameId: 2 }})

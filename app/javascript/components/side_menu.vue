@@ -4,10 +4,10 @@
     </li>
     
     <li class="menu-item">
-      <i class="fa fa-home" aria-hidden="true"></i>HOME
+      <i class="fa fa-home" aria-hidden="true"></i><span @click="toHome">HOME</span>
     </li>
     <li class="menu-item">
-      <i class="fa fa-list-ul" aria-hidden="true"></i>TEST
+      <i class="fa fa-list-ul" aria-hidden="true"></i><span >HOME</span>
     </li>
     <li class="menu-item">
       <i class="fa fa-comments" aria-hidden="true"></i>TEST
@@ -17,7 +17,19 @@
 </template>
 
 <script>
-  
+  export default {
+    name: 'side-menu',
+    data() {
+      return {
+   
+      }
+    },
+    methods: {
+      toHome() {
+        this.$router.push('/')
+      }
+    }
+  }
 </script>
 
 <style scoped>

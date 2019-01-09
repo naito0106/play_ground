@@ -1,10 +1,12 @@
 
  import Vue from 'vue/dist/vue.esm'
  import App from '../app.vue'
+ import router from './router'
 
  document.addEventListener('DOMContentLoaded', () => {
    const app = new Vue({
      el: '#sample-app',
+     router: router,
      render: h => h(App)
    })
  })

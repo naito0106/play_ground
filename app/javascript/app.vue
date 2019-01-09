@@ -2,7 +2,7 @@
   <div id="app">
     <side-menu></side-menu>
     <div class="contents">
-      <p>{{ message }}</p>
+      <router-view />
     </div>
    
   </div>

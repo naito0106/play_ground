@@ -26,7 +26,10 @@
     },
     methods: {
       toHome() {
+        this.$store.dispatch('moduleC/example')
         this.$router.push('/')
+        console.log(this.$store.state.moduleC.data.message)
+        console.log(this.$store.getters.greetingC)
       },
       toGame() {
         this.$router.push({ name: 'game', params: { gameId: 2 }})
@@ -43,8 +46,8 @@
   }
   
   .side-menu {
-    background-color: gray;
-    color: white;
+    background-color: #e7fce3;
+    color: #565656;
     position: absolute;
     height: 100%;
     width: 45px;
@@ -73,6 +76,6 @@
     transition: background-color 0.3s ease-in-out;
   }
   .menu-item:hover {
-    background: #4d294d;
+    background: #d8f4d2;
   }
 </style>

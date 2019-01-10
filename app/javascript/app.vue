@@ -31,7 +31,7 @@ p {
   font-size: 2em;
 }
 .contents {
-  background-color: #eee;
+  background-color: #f7faff;
   height: 100%;
   padding: 20px;
   box-sizing: border-box;

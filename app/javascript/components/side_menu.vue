@@ -7,7 +7,7 @@
       <i class="fa fa-home" aria-hidden="true"></i><span @click="toHome">HOME</span>
     </li>
     <li class="menu-item">
-      <i class="fa fa-list-ul" aria-hidden="true"></i><span @click="toGame">GAME</span>
+      <i class="fa fa-list-ul" aria-hidden="true"></i><span @click="toZipCode">ZIP-CODE</span>
     </li>
     <li class="menu-item">
       <i class="fa fa-comments" aria-hidden="true"></i>TEST
@@ -31,8 +31,8 @@
         console.log(this.$store.state.moduleC.data.message)
         console.log(this.$store.getters.greetingC)
       },
-      toGame() {
-        this.$router.push({ name: 'game', params: { gameId: 2 }})
+      toZipCode() {
+        this.$router.push({ name: 'zip-code'})
       }
     }
   }

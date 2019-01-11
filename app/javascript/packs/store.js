@@ -1,6 +1,6 @@
 import Vue from 'vue/dist/vue.esm'
 import Vuex from 'vuex'
-import moduleC from './store_module/moduleC'
+import moduleZipCode from './store_module/module_zip-code'
 Vue.use(Vuex)
 
 export const store = new Vuex.Store({
@@ -24,7 +24,7 @@ export const store = new Vuex.Store({
   //modules
   modules: {
     //moduleCを読み込み
-    moduleC: moduleC,
+    moduleZipCode: moduleZipCode,
     //moduleAを作成
     moduleA: {
 

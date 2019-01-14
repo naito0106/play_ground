@@ -19,11 +19,14 @@ import axios from 'axios';
     name: 'zip-code',
     data(){
       return {
-        zipCode: '',
-        address: ''
+        zipCode: '1000001',
+        address: 'aaa'
       }
     },
     methods: {
+      testForAddress(){
+        this.address = "TEST"
+      },
       getZipAddressApi(zipCode) {
         return new Promise( function (resolve, reject) {
           axios.get('https://api.zipaddress.net/', {

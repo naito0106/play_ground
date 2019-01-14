@@ -1,4 +1,4 @@
-const ExtractTextPlugin = require("extract-text-webpack-plugin")
+
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {

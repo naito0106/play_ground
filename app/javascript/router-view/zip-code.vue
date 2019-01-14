@@ -53,12 +53,12 @@ import axios from 'axios';
           .catch(error =>{
             this.address = '取得に失敗しました'
           })
-      }
+      },
     }
   };
 </script>
 
-<style scoped>
+<style>
 #zip-code {
   width: 100%;
   height: 100%;

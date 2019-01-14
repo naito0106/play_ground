@@ -24,6 +24,9 @@ import axios from 'axios';
       }
     },
     methods: {
+      testForAddress(){
+        this.address = "TEST"
+      },
       getZipAddressApi(zipCode) {
         return new Promise( function (resolve, reject) {
           axios.get('https://api.zipaddress.net/', {

@@ -19,8 +19,8 @@ import axios from 'axios';
     name: 'zip-code',
     data(){
       return {
-        zipCode: '1000001',
-        address: 'aaa'
+        zipCode: '',
+        address: ''
       }
     },
     methods: {

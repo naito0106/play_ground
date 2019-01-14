@@ -10,7 +10,6 @@ const zipCode = Vue.extend(_zipCode)
 
 describe('zip-codeコンポーネント', () => {
   
-  // 正しい郵便番号が入力された場合にボタンクリックで住所を取得する
   it('fetchAddress()で住所を取得する', (done) => {
       let address = '千代田区'
       
